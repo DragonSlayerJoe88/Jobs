@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Job Board | House to a Vista Flooring + 3D with ME!</title>
+<meta name="description" content="Request flooring work in the St. Louis area or a custom 3D print. Open requests from House to a Vista Flooring and 3D with ME!">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="3dwithme-logo.svg">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <div class="brands">
+    <a class="brand" href="flooring.html"><span class="mark floor">&#8962;</span><span>House to a Vista<small>Flooring · St. Louis / Berkeley, MO</small></span></a>
+    <a class="brand" href="print.html"><img src="3dwithme-logo.svg" alt=""><span>3D with ME!<small>Custom 3D prints · ships anywhere</small></span></a>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <h1>Job Board</h1>
+  <p class="lede">Need floors done in the St. Louis area, or something 3D printed? Post a request and get a quote. Open requests show here without names or contact info.</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab t-floor" role="tab" id="tab-flooring" aria-controls="panel-flooring" aria-selected="true">Flooring</button>
+    <button class="tab t-print" role="tab" id="tab-print" aria-controls="panel-print" aria-selected="false">3D Prints</button>
+  </div>
+
+  <section id="panel-flooring" role="tabpanel" aria-labelledby="tab-flooring">
+    <div class="panel-head">
+      <strong>Flooring requests · St. Louis metro only</strong>
+      <a class="btn floor" href="flooring.html">Request a free measure</a>
+    </div>
+    <p class="note" id="note-flooring" hidden></p>
+    <div class="grid" id="grid-flooring"></div>
+  </section>
+
+  <section id="panel-print" role="tabpanel" aria-labelledby="tab-print" hidden>
+    <div class="panel-head">
+      <strong>Custom 3D print requests · local pickup or shipped</strong>
+      <a class="btn print" href="print.html">Request a custom print</a>
+    </div>
+    <p class="note" id="note-print" hidden></p>
+    <div class="grid" id="grid-print"></div>
+  </section>
+</main>
+<footer class="wrap">House to a Vista Flooring LLC serves the St. Louis / Berkeley, MO area and Metro East IL (not Columbia, MO). 3D with ME! prints on a Bambu X1 Carbon. Requests are reviewed before they show here, and names, phone numbers and emails are never shown.</footer>
+
+<script src="config.js"></script>
+<script src="board.js"></script>
+</body>
+</html>

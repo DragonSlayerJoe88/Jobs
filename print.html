@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3D with ME! Custom Print Request</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="3dwithme-logo.svg">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <div class="brands">
+    <a class="brand" href="index.html"><span class="mark floor">&#8962;</span><span>House to a Vista<small>Flooring · St. Louis / Berkeley, MO</small></span></a>
+    <a class="brand" href="index.html#print"><img src="3dwithme-logo.svg" alt=""><span>3D with ME!<small>Custom 3D prints · ships anywhere</small></span></a>
+  </div>
+</div></header>
+<main class="wrap" style="max-width:720px">
+  <h1>3D with ME! Custom Print Request</h1>
+  <p class="lede">Tell me what you want printed. I'll look it over and send a quote. <a href="index.html#print">See the job board</a></p>
+  <form class="formcard print-form" id="f" data-kind="print" novalidate>
+    <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+    <div class="row2">
+      <div class="field"><label class="lbl" for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required><div class="err">Please enter your name.</div></div>
+      <div class="field"><label class="lbl" for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required><div class="err">Please enter a valid email.</div></div>
+    </div>
+
+    <div class="field"><label class="lbl" for="what">What do you want printed?</label>
+      <textarea id="what" name="what" required placeholder="e.g. 4 replacement knobs for a kitchen cabinet, about 1.25 in across"></textarea><div class="err">Please describe what you want printed.</div></div>
+
+    <div class="field"><label class="lbl" for="files">File or reference photos <span class="hint">(STL, 3MF, or photos, up to 5 files)</span></label>
+      <input type="file" id="files" name="files" accept=".stl,.3mf,.obj,.step,.stp,image/*" multiple data-max="5">
+      <div class="previews" id="files-list"></div><div class="err">Up to 5 files, 20 MB total.</div></div>
+
+    <div class="row2">
+      <div class="field"><label class="lbl" for="size">Size <span class="hint">(if known)</span></label>
+        <input type="text" id="size" name="size" placeholder="e.g. 4 x 2 x 1 in"></div>
+      <div class="field"><label class="lbl" for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="1000" value="1" required><div class="err">How many?</div></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label class="lbl" for="color">Color <span class="hint">(if known)</span></label>
+        <input type="text" id="color" name="color" placeholder="e.g. matte black"></div>
+      <div class="field"><label class="lbl" for="material">Material <span class="hint">(if known)</span></label>
+        <select id="material" name="material">
+          <option value="">Not sure / recommend one</option><option>PLA</option><option>PETG</option><option>ABS / ASA</option><option>TPU (flexible)</option><option>Carbon fiber blend</option>
+        </select></div>
+    </div>
+
+    <div class="row2">
+      <div class="field"><label class="lbl" for="budget">Budget range</label>
+        <select id="budget" name="budget" required>
+          <option value="">Choose one</option><option>Under $20</option><option>$20–$50</option><option>$50–$100</option><option>$100–$250</option><option>$250+</option><option>Not sure</option>
+        </select><div class="err">Please pick a budget range.</div></div>
+      <div class="field"><label class="lbl" for="neededBy">Needed by <span class="hint">(optional)</span></label>
+        <input type="date" id="neededBy" name="neededBy"></div>
+    </div>
+
+    <div class="field"><span class="lbl">Pickup or shipping?</span>
+      <div class="choices">
+        <label><input type="radio" name="delivery" value="Local pickup in St. Louis" required> Local pickup in St. Louis</label>
+        <label><input type="radio" name="delivery" value="Ship it to me"> Ship it to me</label>
+      </div><div class="err">Please choose pickup or shipping.</div>
+      <input type="text" name="zip" id="pzip" inputmode="numeric" maxlength="5" placeholder="Your zip code (optional, helps with shipping quotes)" style="margin-top:8px"></div>
+
+    <div class="field"><label class="lbl" for="notes">Anything else? <span class="hint">(optional)</span></label>
+      <textarea id="notes" name="notes"></textarea></div>
+
+    <p class="closing">I'll email you a quote, usually within a day.</p>
+    <button class="btn print" type="submit" style="width:100%">Send request</button>
+    <div class="status" id="status"></div>
+  </form>
+</main>
+<footer class="wrap">3D with ME! · St. Louis, MO. Your name and email are only used to reply to this request and are never shown on the job board.</footer>
+<script src="config.js"></script>
+<script src="forms.js"></script>
+</body>
+</html>
