@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="3D with ME! logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#121a3a"/>
+      <stop offset="100%" stop-color="#1a237e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#00bcd4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="192" ry="192" fill="url(#bg)"/>
+  <!-- filament spool -->
+  <g transform="translate(512,280)">
+    <ellipse cx="0" cy="28" rx="110" ry="36" fill="none" stroke="url(#accent)" stroke-width="18"/>
+    <ellipse cx="0" cy="-8" rx="110" ry="36" fill="none" stroke="url(#accent)" stroke-width="18"/>
+    <path d="M-110,-8 v36" fill="none" stroke="url(#accent)" stroke-width="18"/>
+    <path d="M110,-8 v36" fill="none" stroke="url(#accent)" stroke-width="18"/>
+    <circle cx="0" cy="-8" r="28" fill="#121a3a" stroke="url(#accent)" stroke-width="10"/>
+    <path d="M40,-40 q80,-50 120,10" fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <!-- wordmark -->
+  <text x="512" y="560" text-anchor="middle" font-family="Arial Black, Helvetica, Arial, sans-serif" font-size="220" font-weight="900" fill="#ffffff" letter-spacing="-4">3D</text>
+  <text x="512" y="680" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="700" fill="#00e5ff" letter-spacing="2">with ME!</text>
+  <rect x="312" y="720" width="400" height="10" rx="5" fill="url(#accent)" opacity="0.9"/>
+</svg>
